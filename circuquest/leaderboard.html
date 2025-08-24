@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>サーキュクエスト ランキング</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 960px; margin: 40px auto; padding: 0 16px; }
+    h1 { margin-bottom: 6px; }
+    .muted { color: #666; font-size: 12px; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background: #f7f7f7; }
+    .right { text-align: right; }
+    .center { text-align: center; }
+    .ok { color: #0a7f2e; }
+  </style>
+</head>
+<body>
+  <h1>ランキング（正答率 上位）</h1>
+  <div class="muted">直近全期間・ユーザー集計。正答率→試行回数→平均時間（昇順）で並べ替え。</div>
+
+  <label>最小試行回数: <input id="minAttempts" type="number" value="5" min="1" style="width:60px" /></label>
+  <button id="reload">更新</button>
+
+  <div id="status" class="muted">読み込み中...</div>
+  <table id="tbl" style="display:none">
+    <thead>
+      <tr>
+        <th class="center">#</th>
+        <th>ユーザー</th>
+        <th class="center">試行</th>
+        <th class="center">正解</th>
+        <th class="center">正答率</th>
+        <th class="right">平均スコア</th>
+        <th class="right">平均時間(ms)</th>
+        <th>最終回答</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    // ① あなたのスプレッドシートIDを入れてください
+    const SHEET_ID = '1qhTWbAWslFMLmlKkcNzEymJYUWBp0x4clOLRp2tqKJ4';
+    // ② シート名（デフォルトのままなら "results"）
+    const SHEET_NAME = 'results';
+
+    // Google Visualization API（公開シートをJSONで取得）
+    // 例: https://docs.google.com/spreadsheets/d/<ID>/gviz/tq?tqx=out:json&sheet=results
+    function buildGvizUrl() {
+      const base = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq`;
+      const params = new URLSearchParams({ tqx: 'out:json', sheet: SHEET_NAME });
+      return `${base}?${params}`;
+    }
+
+    function parseGviz(text) {
+      // 先頭/末尾のラッパーを削る
+      // /*O_o*/\ngoogle.visualization.Query.setResponse(...)
+      const json = text.substring(text.indexOf('{'), text.lastIndexOf('}') + 1);
+      return JSON.parse(json);
+    }
+
+    function rowsToObjects(gviz) {
+      const cols = gviz.table.cols.map(c => c.label || c.id);
+      return gviz.table.rows.map(r => {
+        const o = {};
+        r.c.forEach((cell, i) => { o[cols[i]] = cell ? cell.v : null; });
+        return o;
+      });
+    }
+
+    function fmtPct(n) { return (n * 100).toFixed(1) + '%'; }
+    function fmt(num) { return Number(num).toLocaleString(); }
+
+    async function loadData(minAttempts = 5) {
+      document.getElementById('status').textContent = '読み込み中...';
+      document.getElementById('tbl').style.display = 'none';
+
+      const res = await fetch(buildGvizUrl(), { cache: 'no-store' });
+      const gviz = parseGviz(await res.text());
+      const rows = rowsToObjects(gviz);
+
+      // 列名想定:
+      // timestamp, userId, name, stage, quizId, question, selectedAnswer, correctAnswer, isCorrect, score, sourceUrl, device, durationMs, detailJson
+      const data = rows.map(x => ({
+        timestamp: x.timestamp,                     // 例: 日付文字列
+        userId: x.userId,
+        name: x.name || '名無し',
+        isCorrect: String(x.isCorrect).toLowerCase() === 'true',
+        score: Number(x.score || 0),
+        durationMs: Number(x.durationMs || 0),
+      }));
+
+      // ユーザーごとに集計
+      const byUser = {};
+      for (const r of data) {
+        const key = r.userId || r.name;
+        if (!key) continue;
+        if (!byUser[key]) {
+          byUser[key] = { name: r.name, attempts: 0, correct: 0, sumScore: 0, sumDuration: 0, lastTs: '' };
+        }
+        const u = byUser[key];
+        u.attempts += 1;
+        u.correct  += r.isCorrect ? 1 : 0;
+        u.sumScore += r.score;
+        u.sumDuration += r.durationMs;
+        u.lastTs = r.timestamp || u.lastTs;
+      }
+
+      // 配列化＋指標
+      let arr = Object.values(byUser).map(u => ({
+        name: u.name,
+        attempts: u.attempts,
+        correct: u.correct,
+        acc: u.correct / Math.max(1, u.attempts),
+        avgScore: u.sumScore / Math.max(1, u.attempts),
+        avgDuration: Math.round(u.sumDuration / Math.max(1, u.attempts)),
+        lastTs: u.lastTs
+      }));
+
+      // フィルタ（最小試行回数）
+      arr = arr.filter(u => u.attempts >= minAttempts);
+
+      // 並べ替え：正答率 desc → 試行 desc → 平均時間 asc
+      arr.sort((a,b) =>
+        (b.acc - a.acc) ||
+        (b.attempts - a.attempts) ||
+        (a.avgDuration - b.avgDuration)
+      );
+
+      // DOMに反映
+      const tbody = document.querySelector('#tbl tbody');
+      tbody.innerHTML = '';
+      arr.forEach((u, i) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td class="center">${i+1}</td>
+          <td>${u.name}</td>
+          <td class="center">${fmt(u.attempts)}</td>
+          <td class="center">${fmt(u.correct)}</td>
+          <td class="center"><strong>${fmtPct(u.acc)}</strong></td>
+          <td class="right">${u.avgScore.toFixed(2)}</td>
+          <td class="right">${fmt(u.avgDuration)}</td>
+          <td>${u.lastTs || ''}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('status').textContent =
+        `集計完了：${fmt(arr.length)}人（閾値: ${minAttempts}問以上）`;
+      document.getElementById('tbl').style.display = '';
+    }
+
+    // 初期ロード + UI
+    document.getElementById('reload').onclick = () => {
+      const n = Number(document.getElementById('minAttempts').value || 5);
+      loadData(n);
+    };
+    loadData(5); // デフォルト5問以上
+  </script>
+</body>
+</html>

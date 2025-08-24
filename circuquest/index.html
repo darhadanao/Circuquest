@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>CirqQuest Minimal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>body{font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 16px}</style>
+</head>
+<body>
+  <h1>サーキュクエスト 最小デモ</h1>
+  <p>ボタンを押すと、固定データをスプシに保存します。</p>
+  <button id="send">保存テスト</button>
+  <pre id="log"></pre>
+
+  <script>
+    const GAS_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyOmm_XaZVIsdxFypcXgdg73RqSb5J885PZJHpEHaB_vDRTDwLc9exVhxUwPD5X8QvY/exec';
+
+    document.getElementById('send').addEventListener('click', async () => {
+      // ← 実データ（空にしない）
+      const payload = {
+        userId: 'demo-user-001',
+        name: 'デモ太郎',
+        stage: 'stage1-terms',
+        quizId: 'swot-q1',
+        question: 'SWOTのOは？',
+        selectedAnswer: 'Opportunity',
+        correctAnswer: 'Opportunity',
+        isCorrect: true,
+        score: 1,
+        sourceUrl: 'https://ja.wikipedia.org/wiki/SWOT分析',
+        device: navigator.userAgent,
+        durationMs: 5423,
+        detailJson: { choices: ['Opportunity','Option','Objective','Outcome'] }
+      };
+
+      try {
+        // プリフライトを出さない送信（まずは保存を確実に通す）
+        await fetch(GAS_ENDPOINT, {
+          method: 'POST',
+          mode: 'no-cors',                 // ← これでCORSで止まらない
+          headers: { 'Content-Type': 'text/plain' }, // ← プリフライト回避
+          body: JSON.stringify(payload),
+        });
+        document.getElementById('log').textContent =
+          '送信リクエストを完了。数秒後にスプシ results を確認してください。';
+      } catch (e) {
+        document.getElementById('log').textContent = '送信に失敗: ' + e.message;
+      }
+    });
+  </script>
+</body>
+</html>

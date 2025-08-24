@@ -1,0 +1,752 @@
+[
+  {
+    "quizId": 1,
+    "question": "PMF（プロダクトマーケットフィット）とは何を意味しますか？",
+    "choices": [
+      "顧客のニーズを満たす製品が適切な市場で受け入れられている状態",
+      "製品の市場投入を急ぐこと",
+      "顧客が抱える課題に対する解決策",
+      "事業がスケールし成長段階に達している状態"
+    ],
+    "answer": "顧客のニーズを満たす製品が適切な市場で受け入れられている状態",
+    "explanation": "PMFはProduct Market Fitの略称で、「顧客のニーズを満たす製品が、適切な市場で受け入れられている状態」を意味します [1]。これは、提供する製品やサービスが市場に適合していることを指します [1]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "初級"
+  },
+  {
+    "quizId": 2,
+    "question": "新規事業においてPMF（プロダクトマーケットフィット）が重要とされる主な理由は何ですか？",
+    "choices": [
+      "事業アイデアが豊富にあるため",
+      "チームメンバーの理想を追求するため",
+      "顧客の声や市場ニーズを冷静に検証し、事業の継続につなげるため",
+      "マーケティング予算を確保するため"
+    ],
+    "answer": "顧客の声や市場ニーズを冷静に検証し、事業の継続につなげるため",
+    "explanation": "PMFの考え方が重要である理由は、シンプルに事業の成功につながるからです [2]。特に新規事業においては、PMFを実現できなかったばかりに撤退を余儀なくされるパターンが全体の90%以上を占めるため、顧客の声や市場ニーズを冷静に検証することが事業の継続に不可欠です [2]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 3,
+    "question": "PMF（プロダクトマーケットフィット）を達成するための前提となる考え方は何ですか？",
+    "choices": [
+      "Product Life Cycle (PLC)",
+      "Problem Solution Fit (PSF)",
+      "Solution Product Fit (SPF)",
+      "Customer Problem Fit (CPF)"
+    ],
+    "answer": "Problem Solution Fit (PSF)",
+    "explanation": "PMFな状態を作るための条件として、Problem Solution Fit（PSF：プロブレムソリューションフィット）という考え方があります [2]。PSFに到達していない場合、PMFに到達することもできないとされています [3]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 4,
+    "question": "PSF（プロブレムソリューションフィット）とは何を意味しますか？",
+    "choices": [
+      "提供する製品が市場に合致していること",
+      "顧客が抱える課題に対して自社が提供する解決策が適切に機能していること",
+      "顧客ロイヤルティを測る指標",
+      "事業の成長段階に達していること"
+    ],
+    "answer": "顧客が抱える課題に対して自社が提供する解決策が適切に機能していること",
+    "explanation": "PSFは「Problem：顧客が抱える課題に対して Solution：自社が提供する解決策が Fit：適切に機能していること」を意味します [2]。つまり、「顧客のニーズを的確に把握し、顧客の課題を解決する最適な方法を提供している状態」です [2]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "初級"
+  },
+  {
+    "quizId": 5,
+    "question": "PSF（プロブレムソリューションフィット）を達成するために必要な最初のステップは何ですか？",
+    "choices": [
+      "Minimum Viable Product（MVP）の構築",
+      "解決すべき課題の発見",
+      "製品フィードバックの確保と軌道修正",
+      "課題の解決方法の検討"
+    ],
+    "answer": "解決すべき課題の発見",
+    "explanation": "自社で取り組むサービスや商品がPSFの状態になるためには、まず「解決すべき課題の発見」が必要です [3]。顧客のニーズや「欲しい」気持ちがどこにあるのかを探ることから始まります [3]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 6,
+    "question": "PSF達成に向けた「解決すべき課題の発見」フェーズで、最も避けるべき失敗パターンは何ですか？",
+    "choices": [
+      "アンケート調査を実施しないこと",
+      "顧客のニーズを勝手に判断して進めてしまうこと",
+      "市場調査に時間をかけすぎること",
+      "定量的データのみに依存すること"
+    ],
+    "answer": "顧客のニーズを勝手に判断して進めてしまうこと",
+    "explanation": "「解決すべき課題の発見」におけるよくある失敗は、「きっとこれがニーズだろう」と勝手に判断して進めてしまうパターンです [3]。市場調査を行い、顧客のリアルなニーズを把握することが重要です [3, 4]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 7,
+    "question": "PSF達成に向けた「課題の解決方法の検討」フェーズにおいて、製品の試作モデルを考える際に、実装する機能について考慮すべき優先順位はどのように分けられますか？",
+    "choices": [
+      "「必須」と「不要」の2段階",
+      "「必須」「あったら良い」「不要」の3段階",
+      "「最重要」「重要」「低重要」の3段階",
+      "「主要」「補助」「追加」の3段階"
+    ],
+    "answer": "「必須」「あったら良い」「不要」の3段階",
+    "explanation": "製品の試作モデルを考える際、インタビューをもとに実装する機能について「必須」「あったら良い」「不要」の3段階に分けて考えることで、無駄のないスリムな設計を目指すことができます [4]。基本的に現段階では「必須」があれば十分とされています [4]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "製品開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 8,
+    "question": "MVP（Minimum Viable Product）とは、どのような製品を指しますか？",
+    "choices": [
+      "市場に投入される最終製品",
+      "競合製品より多くの機能を持つ製品",
+      "顧客に必要最小限の価値を提供できるプロダクト",
+      "プロモーションに特化した製品"
+    ],
+    "answer": "顧客に必要最小限の価値を提供できるプロダクト",
+    "explanation": "MVPはMinimum Viable Productの略称で、顧客に必要最小限の価値を提供できるプロダクトのことです [5, 6]。これは単に機能が少ないという意味ではなく、目的を達するのに必要な最小限の機能を意味し、新たな価値を持つ製品であることが前提です [7]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "製品開発",
+    "level": "初級"
+  },
+  {
+    "quizId": 9,
+    "question": "PMF達成までの5ステップの中で、PSF（プロブレムソリューションフィット）を達成した後に構築するものは何ですか？",
+    "choices": [
+      "リテンションカーブ",
+      "Product / Market Fit Survey",
+      "Minimum Viable Product（MVP）",
+      "NPS"
+    ],
+    "answer": "Minimum Viable Product（MVP）",
+    "explanation": "「提供された解決策が顧客の問題解決に適合している＝PSFを達成している」と判断できたら、次のステップでPSFに至るまでに得た知見をもとに、Minimum Viable Product（MVP：実用最小限の製品）を構築します [7, 8]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 10,
+    "question": "リーンスタートアップとは、どのようなマネジメント手法ですか？",
+    "choices": [
+      "完璧な製品を開発するために多額の費用と時間をかける手法",
+      "無駄を省きながら、顧客をより満足させる製品やサービスを開発していく手法",
+      "競合他社の製品を模倣して市場に投入する手法",
+      "徹底的な市場調査のみに基づいて製品を開発する手法"
+    ],
+    "answer": "無駄を省きながら、顧客をより満足させる製品やサービスを開発していく手法",
+    "explanation": "リーンスタートアップとは、無駄を省きながら、顧客をより満足させる製品やサービスを開発していくマネジメント手法です [9-11]。最低限の機能をもつ試作品を短期間・低コストで作り、計測・学習のサイクルを繰り返すことに重点を置いています [9, 10]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "新規事業開発",
+    "level": "初級"
+  },
+  {
+    "quizId": 11,
+    "question": "リーンスタートアップの起源とされている日本の企業、およびその生産方式は何ですか？",
+    "choices": [
+      "ソニーの「ウォークマン生産方式」",
+      "トヨタ自動車の「トヨタ生産方式（TPS）」",
+      "ホンダの「QCサークル活動」",
+      "パナソニックの「松下幸之助の経営哲学」"
+    ],
+    "answer": "トヨタ自動車の「トヨタ生産方式（TPS）」",
+    "explanation": "リーンスタートアップの起源は、トヨタ自動車の生産活動の運用方式の一つである、トヨタ生産方式（TPS）にあります [5]。シリコンバレーの起業家エリック・リースが、自身の手法とTPSの共通点を見出し、リーンスタートアップを提唱しました [5]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "経営戦略",
+    "level": "中級"
+  },
+  {
+    "quizId": 12,
+    "question": "リーンスタートアップの手法における最初のステップは何ですか？",
+    "choices": [
+      "構築",
+      "実験・計測",
+      "仮説",
+      "学習"
+    ],
+    "answer": "仮説",
+    "explanation": "リーンスタートアップの手法は、「1. 仮説」「2. 構築」「3. 実験・計測」「4. 学習」「5. 意思決定」のステップで解説されており、最初のステップはターゲットを選定し、ニーズについて仮説を立てることです [12]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 13,
+    "question": "リーンスタートアップのメリットとして誤っているものはどれですか？",
+    "choices": [
+      "コスト・時間を節約できる",
+      "顧客ニーズに沿った開発ができる",
+      "スピーディに市場へ提供できる",
+      "完璧な製品を一度に市場に投入できる"
+    ],
+    "answer": "完璧な製品を一度に市場に投入できる",
+    "explanation": "リーンスタートアップのメリットには、コスト・時間の節約、顧客ニーズに沿った開発、スピーディな市場投入が挙げられます [13]。完璧な製品を一度に投入するのではなく、MVPを短期間で作り、顧客の反応を確認しながら改善を重ねます [10, 13]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 14,
+    "question": "リーンスタートアップが「時代遅れ」と言われる理由の一つに、SNSの普及が挙げられますが、それはなぜですか？",
+    "choices": [
+      "SNSで製品の宣伝がしにくいから",
+      "SNSによって製品の悪評が広まりやすいため、企業価値の回復が難しくなる可能性があるから",
+      "SNSのデータ分析が困難だから",
+      "SNSユーザーが新しい製品に興味を持たないから"
+    ],
+    "answer": "SNSによって製品の悪評が広まりやすいため、企業価値の回復が難しくなる可能性があるから",
+    "explanation": "SNSの普及により、製品やサービスについての悪評が一度世に出て拡散すると、その後改良して良い製品を提供したとしても企業価値の回復は難しい場合があるため、リーンスタートアップが時代遅れと言われる理由の一つとして挙げられています [14]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "経営戦略",
+    "level": "上級"
+  },
+  {
+    "quizId": 15,
+    "question": "NPS（ネットプロモータースコア）とは何ですか？",
+    "choices": [
+      "製品の市場適合度を測る指標",
+      "顧客ロイヤルティを計測するための指標",
+      "顧客獲得コストの指標",
+      "事業成長の段階を示す指標"
+    ],
+    "answer": "顧客ロイヤルティを計測するための指標",
+    "explanation": "NPSはNet Promoter Scoreの略であり、カスタマーのロイヤルティを計測するための指標として活用されています [15-17]。ビジネス戦略家のフレッド・ライクヘルド氏によって提唱されました [15]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "初級"
+  },
+  {
+    "quizId": 16,
+    "question": "NPSの計測で顧客に投げかける質問は、主にどのような内容ですか？",
+    "choices": [
+      "この製品にどれくらい満足していますか？",
+      "この製品（サービス）が使えなくなったらどう思いますか？",
+      "その企業および製品を友人や同僚に薦める可能性はどの程度ありますか？",
+      "この製品の価格は適切だと思いますか？"
+    ],
+    "answer": "その企業および製品を友人や同僚に薦める可能性はどの程度ありますか？",
+    "explanation": "NPSの計測ではカスタマーに対して「その企業および製品を友人や同僚に薦める可能性はどの程度ありますか？」という質問を投げかけます [16, 17]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "中級"
+  },
+  {
+    "quizId": 17,
+    "question": "NPSの回答で「0～6」と評価した顧客は何と分類されますか？",
+    "choices": [
+      "推奨者",
+      "中立者",
+      "批判者",
+      "無回答者"
+    ],
+    "answer": "批判者",
+    "explanation": "NPSの回答では、0～6を「批判者」、7～8を「中立者」、9～10を「推奨者」と評価します [16]。批判者は商品に不満があり、悪評を広める恐れがあるとされています [16]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "中級"
+  },
+  {
+    "quizId": 18,
+    "question": "AARRR指標の5つのフェーズのうち、最初に来る「A」は何を意味しますか？",
+    "choices": [
+      "Activation（活性化）",
+      "Acquisition（獲得）",
+      "Retention（継続）",
+      "Referral（紹介）"
+    ],
+    "answer": "Acquisition（獲得）",
+    "explanation": "AARRR指標は、Acquisition（獲得）、Activation（活性化）、Retention（継続）、Referral（紹介）、Revenue（収益）の5つのフェーズで構成されています [8, 18]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "初級"
+  },
+  {
+    "quizId": 19,
+    "question": "AARRR指標の5つのフェーズのうち、「サービスの利用継続」を意味するものは何ですか？",
+    "choices": [
+      "Acquisition（獲得）",
+      "Activation（活性化）",
+      "Retention（継続）",
+      "Revenue（収益）"
+    ],
+    "answer": "Retention（継続）",
+    "explanation": "AARRR指標の「Retention」はサービスの利用継続を意味します [8, 18]。各段階での継続率や離脱率を分析することで、解決すべき課題を浮き彫りにします [8]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "初級"
+  },
+  {
+    "quizId": 20,
+    "question": "PMF達成の指標の一つである「リテンションカーブが横ばいになる」状態は何を意味しますか？",
+    "choices": [
+      "新規顧客の獲得が停止した状態",
+      "顧客が製品やサービスの継続利用の価値を認めている状態",
+      "製品の市場価格が安定した状態",
+      "競合他社との差別化が困難になった状態"
+    ],
+    "answer": "顧客が製品やサービスの継続利用の価値を認めている状態",
+    "explanation": "「リテンションカーブが横ばいになる＝継続利用の価値を認めてもらえている」状態を意味します [19]。リテンションとはマーケティング分野において「維持」や「継続」を意味し、製品やサービスの登録や利用が継続されるとリテンションカーブは横ばいとなります [19]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 21,
+    "question": "Product / Market Fit Surveyにおいて、PMFを達成していると判断される「非常に残念」と回答を得られる割合は何パーセント以上ですか？",
+    "choices": [
+      "20%",
+      "30%",
+      "40%",
+      "50%"
+    ],
+    "answer": "40%",
+    "explanation": "Product Market Fit SurveyはPMFを定量的に把握するための調査方法です。ユーザーへの質問「そのプロダクトが使えなくなったらどう思いますか？」に対し、40%以上が「非常に残念」と回答を得られた場合、PMFを達成していると考えられます [15]。",
+    "sourceUrl": "https://pmf-consulting.jp/column/pmf-importance/",
+    "stage": "マーケティング",
+    "level": "中級"
+  },
+  {
+    "quizId": 22,
+    "question": "リーンスタートアップと相性が良いとされる「アジャイル開発」の主な特徴は何ですか？",
+    "choices": [
+      "事前に全ての計画を立ててから一度に開発する手法",
+      "長期間にわたる大規模な開発を一度に行う手法",
+      "小さな機能ごとに短期間で実装とテストを繰り返す開発手法",
+      "コストを最優先し、機能は後回しにする手法"
+    ],
+    "answer": "小さな機能ごとに短期間で実装とテストを繰り返す開発手法",
+    "explanation": "アジャイル開発とは、「素早い」「機敏な」といった意味を持つ開発手法の一つです [20]。『計画→設計→実装→テスト』といった開発工程を、機能単位の小さいサイクルで繰り返します [20, 21]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "開発手法",
+    "level": "初級"
+  },
+  {
+    "quizId": 23,
+    "question": "リーンスタートアップと相性の良い「デザイン思考」の5段階プロセスにおける最初のステップは何ですか？",
+    "choices": [
+      "定義",
+      "試作",
+      "観察・共感",
+      "テスト"
+    ],
+    "answer": "観察・共感",
+    "explanation": "デザイン思考とは、デザイナーがデザインを行う際に用いられるプロセスを体系化したものです [22, 23]。『観察・共感→定義→概念化→試作→テスト』という5段階のプロセスで進められます [22]。",
+    "sourceUrl": "https://monstar-lab.com/dx/business/lean-startup/",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 24,
+    "question": "業務改善のためのフレームワークであるPDCAサイクルの「C」は何を意味しますか？",
+    "choices": [
+      "Check（評価）",
+      "Challenge（挑戦）",
+      "Create（創造）",
+      "Confirm（確認）"
+    ],
+    "answer": "Check（評価）",
+    "explanation": "PDCAは「Plan（計画）」「Do（実行）」「Check（評価）」「Action（改善）」の4つのフェーズを順に繰り返すことで業務改善を目指すフレームワークです [17]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "業務改善",
+    "level": "初級"
+  },
+  {
+    "quizId": 25,
+    "question": "新しいアイデアや技術の実現可能性と、その効果を検証する手法を何と呼びますか？",
+    "choices": [
+      "MVP (Minimum Viable Product)",
+      "ROI (Return On Investment)",
+      "PoC (Proof of Concept)",
+      "KGI (Key Goal Indicator)"
+    ],
+    "answer": "PoC (Proof of Concept)",
+    "explanation": "PoC（Proof of Concept）は「概念実証」と訳され、新しいアイデアや技術の実現可能性と、その効果を検証する手法です [17]。新規事業開発の初期段階で実施され、事業化の可否を判断する目的があります [17]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "初級"
+  },
+  {
+    "quizId": 26,
+    "question": "組織または部門の最終目標として、達成すべき最も重要なものを一つ設定する指標は何ですか？",
+    "choices": [
+      "KPI（重要業績評価指標）",
+      "KSF（重要成功要因）",
+      "KGI（重要目標達成指標）",
+      "ROI（投資収益率）"
+    ],
+    "answer": "KGI（重要目標達成指標）",
+    "explanation": "KGI（Key Goal Indicator）は「重要目標達成指標」と訳され、組織または部門の最終目標として、達成すべき最も重要なものを一つ設定するものです（例：売上高、利益、市場シェア率など） [24]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "経営指標",
+    "level": "初級"
+  },
+  {
+    "quizId": 27,
+    "question": "KGI（重要目標達成指標）を達成するための中間指標を何と呼びますか？",
+    "choices": [
+      "KSF（重要成功要因）",
+      "KPI（重要業績評価指標）",
+      "ROI（投資収益率）",
+      "LTV（顧客生涯価値）"
+    ],
+    "answer": "KPI（重要業績評価指標）",
+    "explanation": "KPI（Key Performance Indicator）は「重要業績評価指標」と訳され、組織の最終目標であるKGIを達成するための中間指標です [24]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "経営指標",
+    "level": "初級"
+  },
+  {
+    "quizId": 28,
+    "question": "ある顧客が取引を開始してから終了するまでの期間に、自社に対してどれだけ利益をもたらしたか、という収益の総額を表す指標は何ですか？",
+    "choices": [
+      "CAC（顧客獲得コスト）",
+      "ROI（投資収益率）",
+      "LTV（顧客生涯価値）",
+      "NPS（ネットプロモータースコア）"
+    ],
+    "answer": "LTV（顧客生涯価値）",
+    "explanation": "LTV（Life Time Value）は「顧客生涯価値」と訳され、ある顧客が取引を開始してから終了するまでの期間に、自社に対してどれだけ利益をもたらしたか、という収益の総額のことです [24]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング",
+    "level": "初級"
+  },
+  {
+    "quizId": 29,
+    "question": "1顧客の受注にかかる費用を指す「顧客獲得コスト」の略称は何ですか？",
+    "choices": [
+      "LTV",
+      "CAC",
+      "ROI",
+      "KSF"
+    ],
+    "answer": "CAC",
+    "explanation": "CACはCustomer Acquisition Costの略で、「顧客獲得コスト」と訳され、1顧客の受注にかかる費用を指します [18]。計算式は（新規顧客の獲得にかかる営業・マーケティング費用の合計）÷（新規顧客獲得数）です [18]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング",
+    "level": "初級"
+  },
+  {
+    "quizId": 30,
+    "question": "製品・サービスを市場に投入してから衰退するまでの一連の過程を、4つのフェーズに分けて管理するフレームワークは何ですか？",
+    "choices": [
+      "PLC（プロダクトライフサイクル）",
+      "STP分析",
+      "SWOT分析",
+      "3C分析"
+    ],
+    "answer": "PLC（プロダクトライフサイクル）",
+    "explanation": "PLC（Product Life Cycle）は製品・サービスを市場に投入してから衰退するまでの一連の過程のことで、「導入期」「成長期」「成熟期」「衰退期」の4つのフェーズに分けられます [25]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "製品開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 31,
+    "question": "事業アイデアの立案から事業開発、その後の成長までの道のりを示したもので、「CPF」「PSF」「SPF」「PMF」「GTM」「Growth」の6つのフェーズで構成される概念は何ですか？",
+    "choices": [
+      "リーンスタートアップ",
+      "フィットジャーニー",
+      "アジャイル開発",
+      "デザイン思考"
+    ],
+    "answer": "フィットジャーニー",
+    "explanation": "フィットジャーニーは事業アイデアの立案から事業開発、その後の成長までの道のりを示したものです [26]。CPF、PSF、SPF、PMF、GTM、Growthの6つのフェーズで構成されます [26]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "上級"
+  },
+  {
+    "quizId": 32,
+    "question": "フィットジャーニーを構成するフェーズの一つで、顧客の課題を検証するプロセスとそれが検証された状態を指す用語は何ですか？",
+    "choices": [
+      "PSF（Problem Solution Fit）",
+      "SPF（Solution Product Fit）",
+      "CPF（Customer Problem Fit）",
+      "PMF（Product Market Fit）"
+    ],
+    "answer": "CPF（Customer Problem Fit）",
+    "explanation": "CPF（Customer Problem Fit）は「フィットジャーニー」を構成するフェーズの一つであり、顧客の課題を検証するプロセスとそれが検証された状態を指します [6]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 33,
+    "question": "PSFフェーズで確認した解決策をプロダクトとして実現可能か、プロダクトが解決策を十分に実現できているかを検証するプロセスを指す用語は何ですか？",
+    "choices": [
+      "CPF（Customer Problem Fit）",
+      "PSF（Problem Solution Fit）",
+      "SPF（Solution Product Fit）",
+      "PMF（Product Market Fit）"
+    ],
+    "answer": "SPF（Solution Product Fit）",
+    "explanation": "SPF（Solution Product Fit）は「フィットジャーニー」を構成するフェーズの一つであり、PSFフェーズで確認した解決策をプロダクトとして実現可能か、プロダクトが解決策を十分に実現できているかを検証するプロセスを指します [27]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "製品開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 34,
+    "question": "フィットジャーニーを構成するフェーズの一つで、自社の製品・サービスをどのような流れで顧客へ届けるかをまとめた戦略を指す用語は何ですか？",
+    "choices": [
+      "Growth",
+      "GTM（Go To Market）",
+      "CPF（Customer Problem Fit）",
+      "PSF（Problem Solution Fit）"
+    ],
+    "answer": "GTM（Go To Market）",
+    "explanation": "GTM（Go To Market）は「フィットジャーニー」を構成するフェーズの一つであり、自社の製品・サービスをどのような流れで顧客へ届けるかをまとめた戦略を指します [6]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング戦略",
+    "level": "中級"
+  },
+  {
+    "quizId": 35,
+    "question": "市場を細分化する「Segmentation」、ターゲットを定める「Targeting」、自社のポジションを明確にする「Positioning」の3つのステップで構成される市場戦略構築フレームワークは何ですか？",
+    "choices": [
+      "SWOT分析",
+      "3C分析",
+      "4P分析",
+      "STP分析"
+    ],
+    "answer": "STP分析",
+    "explanation": "STP分析は市場戦略を構築するためのフレームワークです [27]。市場を細分化する「Segmentation（セグメンテーション）」、ターゲットを定める「Targeting（ターゲティング）」、自社のポジションを明確にする「Positioning（ポジショニング）」という3つのステップで構成されます [27]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング戦略",
+    "level": "初級"
+  },
+  {
+    "quizId": 36,
+    "question": "経営戦略を立てるために、自社の外部環境と内部環境を「Strengths（強み）」「Weaknesses（弱み）」「Opportunities（機会）」「Threats（脅威）」の4つの要素に整理して分析するフレームワークは何ですか？",
+    "choices": [
+      "3C分析",
+      "4P分析",
+      "SWOT分析",
+      "STP分析"
+    ],
+    "answer": "SWOT分析",
+    "explanation": "SWOT分析は経営戦略を立てるために、自社にとってプラスになる要因とマイナスになる要因を分析するフレームワークです [27]。自社の外部環境と内部環境を「Strengths（強み）」「Weaknesses（弱み）」「Opportunities（機会）」「Threats（脅威）」の4つの要素に整理して分析します [27]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "経営戦略",
+    "level": "初級"
+  },
+  {
+    "quizId": 37,
+    "question": "市場全体の規模や、自社がリーチできる可能性のある市場規模を把握するためのフレームワークで、市場全体で獲得できる可能性のある最大の市場規模を指す用語は何ですか？",
+    "choices": [
+      "SAM（Serviceable Available Market）",
+      "SOM（Serviceable Obtainable Market）",
+      "TAM（Total Available Market）",
+      "ROI（Return On Investment）"
+    ],
+    "answer": "TAM（Total Available Market）",
+    "explanation": "TAM・SAM・SOMは市場全体の規模や、自社がリーチできる可能性のある市場規模を把握するためのフレームワークです [28]。TAM（Total Available Market）は、ある市場で獲得できる可能性のある、最大の市場規模を指します [28]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "市場分析",
+    "level": "中級"
+  },
+  {
+    "quizId": 38,
+    "question": "事業環境を分析するためのフレームワークで、「Customer（顧客）」「Competitor（競合）」「Company（自社）」の3つの要素を分析するものは何ですか？",
+    "choices": [
+      "SWOT分析",
+      "STP分析",
+      "3C分析",
+      "4P分析"
+    ],
+    "answer": "3C分析",
+    "explanation": "3C分析は事業環境を分析するためのフレームワークです [28]。「Customer（顧客）」「Competitor（競合）」「Company（自社）」の3つの要素を分析し、新規事業開発の現場では、アイデア創出やマーケティング戦略の策定のために活用されます [28]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "経営戦略",
+    "level": "初級"
+  },
+  {
+    "quizId": 39,
+    "question": "基本的なマーケティング要素である「Product（製品）」「Price（価格）」「Place（流通）」「Promotion（販売促進）」の頭文字をとったフレームワークは何ですか？",
+    "choices": [
+      "STP分析",
+      "SWOT分析",
+      "3C分析",
+      "4P"
+    ],
+    "answer": "4P",
+    "explanation": "4Pは基本的なマーケティング要素のことで「Product（製品）」「Price（価格）」「Place（流通）」「Promotion（販売促進）」の頭文字をとったものです [28]。主にマーケティング戦略を立案、実行する際に活用されます [28]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング戦略",
+    "level": "初級"
+  },
+  {
+    "quizId": 40,
+    "question": "事業の成長を支援する組織やプログラムで、主にシード期以降のスタートアップや一般企業内の新規事業部門などが支援対象となる用語は何ですか？",
+    "choices": [
+      "インキュベーター",
+      "ベンチャーキャピタル",
+      "アクセラレーター",
+      "イントレプレナー"
+    ],
+    "answer": "アクセラレーター",
+    "explanation": "アクセラレーターは事業の成長を支援する組織やプログラムです [21]。主にシード期以降のスタートアップや一般企業内の新規事業部門などが支援対象となります [21]。類似する言葉に「インキュベーター」があります [21]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 41,
+    "question": "アジャイル開発における開発サイクルの単位を指す用語は何ですか？",
+    "choices": [
+      "プロトタイプ",
+      "イテレーション",
+      "スクラム",
+      "スプリント"
+    ],
+    "answer": "イテレーション",
+    "explanation": "イテレーションはアジャイル開発における開発サイクルの単位です [21]。一般的には「計画→設計→実装→テスト」の順に進行します [21]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "開発手法",
+    "level": "中級"
+  },
+  {
+    "quizId": 42,
+    "question": "新製品・サービスが市場に普及する過程を「イノベーター」「アーリーアダプター」「アーリーマジョリティ」「レイトマジョリティ」「ラガード」の5つの顧客層に分類するマーケティング理論は何ですか？",
+    "choices": [
+      "STP分析",
+      "4P分析",
+      "イノベーター理論",
+      "3C分析"
+    ],
+    "answer": "イノベーター理論",
+    "explanation": "イノベーター理論は新製品・サービスが市場に普及する過程を5つの顧客層に分類したマーケティング理論です [21]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング理論",
+    "level": "初級"
+  },
+  {
+    "quizId": 43,
+    "question": "事業の創出を支援する組織やプログラムで、主にシード期以前の企業や起業家が支援対象となる用語は何ですか？",
+    "choices": [
+      "アクセラレーター",
+      "インキュベーター",
+      "ベンチャーキャピタル",
+      "イントレプレナー"
+    ],
+    "answer": "インキュベーター",
+    "explanation": "インキュベーターは事業の創出を支援する組織やプログラムです [29]。主にシード期以前の企業や起業家が支援対象となります [29]。類似する言葉に「アクセラレーター」があります [29]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 44,
+    "question": "企業内で新規事業を立ち上げたり、革新的なプロジェクトを推進する社員を指す言葉は何ですか？",
+    "choices": [
+      "アントレプレナー",
+      "インキュベーター",
+      "イントレプレナー",
+      "アクセラレーター"
+    ],
+    "answer": "イントレプレナー",
+    "explanation": "イントレプレナーは企業内で新規事業を立ち上げたり、革新的なプロジェクトを推進する社員を指し、「社内起業家」とも呼ばれます [29]。反対に、企業に属さずに独立して起業する人を「アントレプレナー」といいます [29]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "組織・人事",
+    "level": "中級"
+  },
+  {
+    "quizId": 45,
+    "question": "15〜30秒程度の短時間で事業のアイデアやビジネスモデルを社内関係者や投資家に伝え、理解を得るプレゼン手法は何ですか？",
+    "choices": [
+      "事業計画書",
+      "エレベーターピッチ",
+      "ブレインストーミング",
+      "ワークショップ"
+    ],
+    "answer": "エレベーターピッチ",
+    "explanation": "エレベーターピッチは15〜30秒程度の短時間で事業のアイデアやビジネスモデルを社内関係者や投資家に伝え、理解を得るプレゼン手法です [30]。新規事業の社内説明会や商談時の自社紹介などさまざまな場面で活用されます [30]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "コミュニケーション",
+    "level": "初級"
+  },
+  {
+    "quizId": 46,
+    "question": "社内外の知見や技術を積極的に取り入れ、革新的な製品・サービス、事業を創出することを何と呼びますか？",
+    "choices": [
+      "クローズドイノベーション",
+      "プロダクトアウト",
+      "オープンイノベーション",
+      "マーケットイン"
+    ],
+    "answer": "オープンイノベーション",
+    "explanation": "オープンイノベーションは社内外の知見や技術を積極的に取り入れ、革新的な製品・サービス、事業を創出することです [30]。近年では、スマートシティ「Woven City」などが代表例として挙げられます [30]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "中級"
+  },
+  {
+    "quizId": 47,
+    "question": "顧客が製品・サービスを認知してから、購買や契約に至るまでの道のりを一連のプロセスとして捉え、マーケティング戦略の策定に役立てる概念は何ですか？",
+    "choices": [
+      "製品ライフサイクル",
+      "カスタマージャーニー",
+      "顧客セグメンテーション",
+      "NPS"
+    ],
+    "answer": "カスタマージャーニー",
+    "explanation": "カスタマージャーニーは、顧客が製品・サービスを認知してから、購買や契約に至るまでの道のりです [30]。顧客の行動や思考、感情の変化を一連のプロセスとして捉えることで、マーケティング戦略の策定に役立てられます [30]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング戦略",
+    "level": "初級"
+  },
+  {
+    "quizId": 48,
+    "question": "直面する課題や問題に対して、自分の経験や知識をもとに「仮説」を立て、その仮説を実際に検証していく思考法は何ですか？",
+    "choices": [
+      "論理思考",
+      "抽象思考",
+      "仮説思考",
+      "ゼロベース思考"
+    ],
+    "answer": "仮説思考",
+    "explanation": "仮説思考は、直面する課題や問題に対して、自分の経験や知識をもとに「仮説」を立て、その仮説を実際に検証していく思考法です [30]。限られた情報をもとに、最も可能性が高い解決策を設定し、実行し、結果を検証して修正を加えながら進めます [30]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "思考法",
+    "level": "中級"
+  },
+  {
+    "quizId": 49,
+    "question": "新製品・サービスが、アーリーアダプター層からマジョリティ層に普及する際に乗り越えなければならない大きな溝を指す用語は何ですか？",
+    "choices": [
+      "ブルーオーシャン",
+      "レッドオーシャン",
+      "キャズム",
+      "マーケットギャップ"
+    ],
+    "answer": "キャズム",
+    "explanation": "キャズムは新製品・サービスが、アーリーアダプター層からマジョリティ層に普及する際に乗り越えなければならない大きな溝のことです [31]。「イノベーター理論」におけるアーリーアダプター層とアーリーマジョリティ層の間に存在するとされます [31]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "マーケティング理論",
+    "level": "上級"
+  },
+  {
+    "quizId": 50,
+    "question": "事業や製品・サービスの方向性を転換することを指す用語は何ですか？",
+    "choices": [
+      "ローンチ",
+      "スケールアップ",
+      "ピボット",
+      "コモディティ化"
+    ],
+    "answer": "ピボット",
+    "explanation": "ピボットは事業や製品・サービスの方向性や転換することを指します [26, 32]。新規事業成功への手引書とも言えるPMFの概念を手に、常にどうすれば勝てるのかを考え、日に日に事業をピボットしていくことが事業の目標達成には必要です [32]。",
+    "sourceUrl": "https://sairu.co.jp/method/newbusiness-glossary",
+    "stage": "新規事業開発",
+    "level": "中級"
+  }
+]
